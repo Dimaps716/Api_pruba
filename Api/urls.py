@@ -19,8 +19,10 @@ Including another URLconf
 
 # Django
 from django.contrib import admin
-
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path, include
+
 
 
 
@@ -29,5 +31,5 @@ urlpatterns = [
     # url administrador 
     path('admin/', admin.site.urls),
     # url de las api 
-    path('', include('products.urls')),
-]
+    path('', include(('products.urls', 'products'), namespace='items')),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
