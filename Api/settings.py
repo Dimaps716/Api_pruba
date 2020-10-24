@@ -57,7 +57,8 @@ MIDDLEWARE = [
     
     # cors
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsPostCsrfMiddleware',
+    
 
     # whitenoise
     'whitenoise.middleware.WhiteNoiseMiddleware',
