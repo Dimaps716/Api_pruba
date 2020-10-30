@@ -11,9 +11,6 @@ class itemsSerializer(serializers.ModelSerializer):
         # 'picture_url',
         # 'url_located',
         # 'category',
-        # 'publication_date',
-        # 'ranti',
-        # 'comments',
-        # 'description'
+        # store
         # )
         fields = '__all__'
