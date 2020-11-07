@@ -1,6 +1,6 @@
 # API
 
-API of the chapfetch project .
+API of the Cheapfetch project .
 
 Starting with 🚀
 
