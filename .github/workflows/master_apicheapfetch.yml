@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'apicheapfetch'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cd7ee6d137d34166bb6c76832c822436 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4ed7f172387f4c6bbfbe1f4821db9a1b }}
