@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8)7(v67@%t+q9*+c(9!oeo92q8a94#30v26ul5^egp%^4wvfuj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -46,6 +46,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
 
+    # cors
+    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsPostCsrfMiddleware',
 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -54,11 +57,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
-    # cors
-    'corsheaders.middleware.CorsMiddleware',
-    'corsheaders.middleware.CorsPostCsrfMiddleware',
-    
 
     # whitenoise
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -97,7 +95,7 @@ WSGI_APPLICATION = 'Api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pruebas',
+        'NAME': 'Cheapfetch',
         'USER': 'dima',
         'PASSWORD': 'dima1994.',
         'HOST': 'dbcheapfetch.ckz5a10xfbia.us-east-1.rds.amazonaws.com',
