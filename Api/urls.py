@@ -25,8 +25,6 @@ from django.urls import path, include
 
 
 
-
-
 urlpatterns = [
     # url administrador 
     path('admin/', admin.site.urls),
