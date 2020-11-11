@@ -26,8 +26,8 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    # url administrador 
+    # admin url
     path('admin/', admin.site.urls),
-    # url de las api 
+    # api url
     path('', include(('products.urls', 'products'), namespace='items')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
