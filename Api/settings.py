@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-# con esto permites que todos los llamdos a la api sean validos 
+# accept calls to api
 CORS_ALLOW_ALL_ORIGINS = True
 
 

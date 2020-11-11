@@ -5,7 +5,6 @@
 from django.urls import path
 
 # views
-
 from products import views
 
 urlpatterns = [
